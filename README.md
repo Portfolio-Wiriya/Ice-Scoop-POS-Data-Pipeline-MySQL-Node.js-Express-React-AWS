@@ -1,20 +1,53 @@
 # Ice-Cream-Shop-POS-Data-Pipeline-MySQL-Node.js-Express-React-AWS
 
-## Object
-โปรเจคพัฒนาเว็บแอปพลิเคชั่น POS ในร้านขายไอศครีม เป็นโปรเจคที่พัฒนาเพื่อความสะดวกในการขายและเช็คจำนวนสินค้าในคลัง โดยมุ่งเน้นไปที่ระบบจัดการข้อมูลผ่าน API โดยจำลองการทำงานผ่านเว็บไซต์และใช้ฐานข้อมูลแบบกลุ่มเมฆ (Cloud Database) อย่าง AWS เพื่อจำลองระบบการซื้อขายในธุรกิจเป็นแนวทางในการพัฒนาเพื่อต่อยอดการทำงานและนำไปใช้ได้จริงอย่างมีประสิทธิภาพ
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
 
-## Getting Started
-### เข้าไปที่หน้าเว็บเพื่อใช้งาน
+เว็บแอปพลิเคชันระบบจัดการหน้าร้าน (Point of Sale - POS) สำหรับร้านขายไอศกรีม พัฒนาขึ้นเพื่อเพิ่มความสะดวกในการบันทึกยอดขายและตรวจสอบสินค้าคงคลัง real-time มุ่งเน้นการจัดการข้อมูลผ่าน RESTful API ร่วมกับฐานข้อมูลบน cloud (AWS) เพื่อจำลองระบบซื้อขายจริงที่พร้อมต่อยอดใช้งานในเชิงธุรกิจ
 
-## Framewoke
-[] Front-End
-[][] Order POS
-[][] Stoke
-[][] Dashbord
-[] Back-End
-[][] MySQL Database
-[][] AWS Cloud Database
-[] Server
-[][] Express API
+---
 
+## 🎯 Objectives (วัตถุประสงค์)
+- พัฒนาระบบ POS หน้าร้านที่ใช้งานง่าย ตัดสต็อกและบันทึกยอดขายได้แม่นยำ
+- ออกแบบ Data Pipeline และ REST API สำหรับรับ-ส่งข้อมูลระหว่าง Web Application และ Database
+- ประยุกต์ใช้ Cloud Database (AWS) เพื่อจำลองการทำงานของระบบธุรกิจจริงที่มีความเสถียรและปลอดภัย
+
+---
+
+## ✨ Features (ฟีเจอร์หลัก)
+
+- **Order POS:** หน้าจอขายสินค้า คำนวณราคา สรุปรายการสั่งซื้อ
+- **Stock Management:** ระบบจัดการคลังสินค้า เช็คจำนวนคงเหลือ เพิ่ม/ลด/แก้ไขสินค้า
+- **Dashboard:** สรุปภาพรวมยอดขายและสถิติสินค้าขายดี
+
+---
+
+## 🛠 Tech Stack (เทคโนโลยีที่ใช้)
+
+### Front-End
+- **React.js** - พัฒนา UI แบบ Dynamic Single Page Application
+- **CSS / Tailwind CSS** - จัดสไตล์และ Responsive Design
+
+### Back-End & Database
+- **Node.js & Express.js** - สร้าง RESTful API บริหารจัดการข้อมูล
+- **MySQL** - ฐานข้อมูลเชิงสัมพันธ์ (Relational Database)
+- **AWS (Amazon RDS / Cloud Services)** - โฮสต์ฐานข้อมูลบนระบบ Cloud
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 ขึ้นไป)
+- MySQL Database
+
+### Installation & Run
+
+1. **Clone repository**
+   ```bash
+   git clone [https://github.com/your-username/ice-cream-pos.git](https://github.com/your-username/ice-cream-pos.git)
+   cd ice-cream-pos
 
