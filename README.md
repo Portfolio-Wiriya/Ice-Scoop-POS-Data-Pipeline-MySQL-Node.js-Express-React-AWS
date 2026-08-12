@@ -1,4 +1,4 @@
-# Ice-Cream-Shop-POS-Data-Pipeline-MySQL-Node.js-Express-React-AWS
+# Ice-Scoop-POS-Data-Pipeline-MySQL-Node.js-Express-React-AWS
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
