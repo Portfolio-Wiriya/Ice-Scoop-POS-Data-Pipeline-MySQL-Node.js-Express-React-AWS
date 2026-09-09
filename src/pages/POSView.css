@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.con-pos {
+  min-height: 100vh;
+  background-color: #f7f6f4;
+  font-family: 'Inter', sans-serif;
+}
+
+.pos-body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+/* .pos-main {
+  flex: 1;
+  padding: 24px;
+} */
+
+.pd-scroll {
+  flex: 1;
+  min-width: 0;
+  max-height: calc(100vh - 72px);
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.pd-panel {
+  margin-bottom: 28px;
+}
+
+.pd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.pd-card {
+  background-color: #ffffff;
+  border: 1px solid #eef0f4;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.pd-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.pd-emoji {
+  font-size: 32px;
+  margin: 0 0 8px 0;
+}
+
+.pd-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #14161c;
+  margin: 0 0 4px 0;
+  text-transform: capitalize;
+}
+
+.pd-price {
+  font-size: 14px;
+  color: #f19500;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.pd-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f19500;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pd-btn:hover {
+  background-color: #d98400;
+}
+
+/* ===== Bill panel ===== */
+.bill-panel {
+  flex-shrink: 0;
+  width: 320px;
+  min-height: calc(100vh - 72px);
+  background-color: #ffffff;
+  border-left: 1px solid #eeece7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 72px;
+}
+
+.bill-title { font-size: 16px; font-weight: 700; color: #14161c; margin: 0 0 16px 0; }
+.bill-empty { font-size: 13px; color: #a3a19b; text-align: center; padding: 40px 0; }
+
+.bill-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #f7f6f4;
+}
+
+.bill-item-emoji { font-size: 22px; }
+.bill-item-info { flex: 1; min-width: 0; }
+.bill-item-name { font-size: 13px; font-weight: 600; color: #14161c; margin: 0; text-transform: capitalize; }
+.bill-item-sub { font-size: 11px; color: #a3a19b; margin: 2px 0 0 0; }
+
+.bill-item-qty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qty-btn {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #eeece7;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #14161c;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.qty-btn:hover { background-color: #fdf3e5; border-color: #f19500; color: #f19500; }
+
+.qty-value { font-size: 13px; font-weight: 600; color: #14161c; min-width: 16px; text-align: center; }
+
+.bill-item-price { font-size: 13px; font-weight: 600; color: #f19500; white-space: nowrap; }
+
+.bill-item-remove { border: none; background: none; color: #a3a19b; cursor: pointer; font-size: 14px; padding: 4px; }
+.bill-item-remove:hover { color: #e11d48; }
+
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 4px;
+  border-top: 1px solid #eeece7;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #14161c;
+}
+.bill-total strong { font-size: 18px; color: #f19500; }
+
+.bill-checkout-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f19500;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.bill-checkout-btn:hover { background-color: #d98400; }
+.bill-checkout-btn:disabled { background-color: #d6d4cd; cursor: not-allowed; }
+
+/* ===== แจ้งเตือนสถานะ ===== */
+.stock-notice {
+  background-color: #fef3cd;
+  border: 1px solid #f5d78e;
+  color: #7a5a00;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ===== การ์ดสินค้าหมด ===== */
+.pd-card {
+  position: relative;
+}
+
+.pd-card-out {
+  opacity: 0.55;
+}
+
+.pd-badge-out {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #e11d48;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.pd-btn-out {
+  background-color: #e11d48;
+}
+.pd-btn-out:hover {
+  background-color: #be123c;
+}
+
+.pd-btn-available {
+  background-color: #16a34a;
+}
+.pd-btn-available:hover {
+  background-color: #15803d;
+}
+
+.pd-btn:disabled {
+  background-color: #d6d4cd;
+  cursor: not-allowed;
+}
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border: 1px solid #eef0f4;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.history-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #e3e7ee;
+}
+
+.history-id {
+  font-size: 14px;
+  font-weight: 700;
+  color: #14161c;
+  margin: 0;
+}
+
+.history-date {
+  font-size: 12px;
+  color: #a3a19b;
+  margin: 2px 0 0 0;
+}
+
+.history-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.history-total {
+  font-size: 15px;
+  font-weight: 700;
+  color: #f19500;
+}
+
+.history-status {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.status-paid {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.status-cancelled {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
