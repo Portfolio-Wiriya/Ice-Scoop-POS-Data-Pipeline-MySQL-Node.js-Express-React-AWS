@@ -48,6 +48,6 @@
 
 1. **Clone repository**
    ```bash
-   git clone [https://github.com/your-username/ice-cream-pos.git](https://github.com/your-username/ice-cream-pos.git)
+   git clone (https://github.com/Portfolio-Wiriya/Ice-Scoop-POS-Data-Pipeline-MySQL-Node.js-Express-React-AWS.git)
    cd ice-cream-pos
 
